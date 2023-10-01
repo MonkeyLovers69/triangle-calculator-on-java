@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class TriangleCalculations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter the length of the first side of the triangle:");
+        double side1 = scanner.nextDouble();
+
+        System.out.println("Please enter the length of the second side of the triangle:");
+        double side2 = scanner.nextDouble();
+
+        System.out.println("Please enter the length of the third side of the triangle:");
+        double side3 = scanner.nextDouble();
+
+        scanner.close();
+
+        double area = side1 * side2 * side3;
+
+        // Calculate the perimeter
+        double perimeter = side1 + side2 + side3;
+
+        System.out.println("Area of your triangle: " + area);
+        System.out.println("Perimeter of your triangle: " + perimeter);
+    }
+}
